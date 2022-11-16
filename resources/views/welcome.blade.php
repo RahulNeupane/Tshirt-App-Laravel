@@ -11,9 +11,22 @@
 
 <body>
     <h1 class="text-center mt-3">Tshirt Dashboard</h1>
+
+
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
+                @if (Session::has('danger'))
+                    <div class="alert alert-danger text-center" role="alert">
+                        {{ Session::get('danger') }}
+                    </div>
+                @endif
+                @if (Session::has('success'))
+                    <div class="alert alert-success text-center" role="alert">
+                        {{ Session::get('success') }}
+                    </div>
+                @endif
+
                 @yield('content')
             </div>
         </div>

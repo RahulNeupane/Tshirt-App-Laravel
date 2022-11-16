@@ -52,7 +52,7 @@ class TshirtController extends Controller
 
         $tshirt->save();
 
-        return redirect()->route('product.index');
+        return back()->with('success','Batch added succesfully');
 
     }
 
@@ -123,6 +123,6 @@ class TshirtController extends Controller
     {
         $tshirt = Tshirt::findOrFail($id);
         $tshirt->delete();
-        return back();
+        return back()->with('danger','Batch deleted succesfully');
     }
 }

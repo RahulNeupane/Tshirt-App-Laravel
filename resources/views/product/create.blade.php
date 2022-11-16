@@ -36,7 +36,8 @@
     @error('remark')
         <p class="text-danger">{{$message}}</p>
     @enderror
-    
-    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <a href="{{ route('product.index') }}" class="btn btn-primary m-3">Home Page</a>
+    <button type="submit" class="btn btn-success">Submit</button>
   </form>
 @endsection

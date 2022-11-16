@@ -37,6 +37,6 @@
         <p class="text-danger">{{$message}}</p>
     @enderror
     
-    <button type="submit" class="btn btn-primary">Update</button>
+    <button type="submit" class="btn btn-success">Update</button>
   </form>
 @endsection
